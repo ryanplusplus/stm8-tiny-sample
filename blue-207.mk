@@ -7,7 +7,7 @@ TINY := $(STM8_TINY)/lib/tiny
 DEVICE := stm8s207rb
 DEVICE_TYPE := STM8S207
 STLINK := stlinkv2
-OPENOCD_CFG := openocd/stm8s207.cfg
+OPENOCD_CFG := $(TOOLS_DIR)/openocd/stm8s207.cfg
 TOOLCHAIN_VERSION := 4.0.0
 
 MAIN := src/app/blue-207/main.c
