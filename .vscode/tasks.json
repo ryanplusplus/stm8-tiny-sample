@@ -1,0 +1,137 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "debug-deps-black",
+      "type": "shell",
+      "command": "make -j8 -f black.mk debug-deps",
+      "presentation": {
+        "echo": true,
+        "reveal": "silent",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    },
+    {
+      "label": "debug-deps-blue",
+      "type": "shell",
+      "command": "make -j8 -f blue.mk debug-deps",
+      "presentation": {
+        "echo": true,
+        "reveal": "silent",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    },
+    {
+      "label": "debug-deps-blue-207",
+      "type": "shell",
+      "command": "make -j8 -f blue-207.mk debug-deps",
+      "presentation": {
+        "echo": true,
+        "reveal": "silent",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    },
+    {
+      "label": "debug-deps-blue-atomic",
+      "type": "shell",
+      "command": "make -j8 -f blue-atomic.mk debug-deps",
+      "presentation": {
+        "echo": true,
+        "reveal": "silent",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    },
+    {
+      "label": "debug-deps-blue-zumo",
+      "type": "shell",
+      "command": "make -j8 -f blue-zumo.mk debug-deps",
+      "presentation": {
+        "echo": true,
+        "reveal": "silent",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    },
+    {
+      "label": "debug-deps-starduino-zumo",
+      "type": "shell",
+      "command": "make -j8 -f starduino-zumo.mk debug-deps",
+      "presentation": {
+        "echo": true,
+        "reveal": "silent",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    },
+    {
+      "label": "debug-deps-discovery",
+      "type": "shell",
+      "command": "make -j8 -f discovery.mk debug-deps",
+      "presentation": {
+        "echo": true,
+        "reveal": "silent",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    },
+    {
+      "label": "debug-deps-nucleo-32",
+      "type": "shell",
+      "command": "make -j8 -f nucleo-32.mk debug-deps",
+      "presentation": {
+        "echo": true,
+        "reveal": "silent",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    },
+    {
+      "label": "debug-deps-nucleo-64",
+      "type": "shell",
+      "command": "make -j8 -f nucleo-64.mk debug-deps",
+      "presentation": {
+        "echo": true,
+        "reveal": "silent",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    },
+    {
+      "label": "debug-deps-w1209",
+      "type": "shell",
+      "command": "make -j8 -f w1209.mk debug-deps",
+      "presentation": {
+        "echo": true,
+        "reveal": "silent",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    }
+  ]
+}

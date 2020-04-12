@@ -1,0 +1,167 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "test",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/test/tiny_tests",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "osx": {
+        "MIMode": "lldb"
+      },
+      "linux": {
+        "MIMode": "gdb"
+      },
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    },
+    {
+      "name": "black",
+      "cwd": "${workspaceRoot}",
+      "executable": "${workspaceFolder}/build/black/tiny-debug.elf",
+      "request": "launch",
+      "type": "cortex-debug",
+      "servertype": "openocd",
+      "serverpath": "${workspaceFolder}/build/black/openocd/bin/openocd",
+      "runToMain": true,
+      "armToolchainPath": "${workspaceRoot}/build/black",
+      "configFiles": [
+        "${workspaceRoot}/build/black/openocd.cfg"
+      ],
+      "preLaunchTask": "debug-deps-black"
+    },
+    {
+      "name": "blue",
+      "cwd": "${workspaceRoot}",
+      "executable": "${workspaceFolder}/build/blue/tiny-debug.elf",
+      "request": "launch",
+      "type": "cortex-debug",
+      "servertype": "openocd",
+      "serverpath": "${workspaceFolder}/build/blue/openocd/bin/openocd",
+      "runToMain": true,
+      "armToolchainPath": "${workspaceRoot}/build/blue",
+      "configFiles": [
+        "${workspaceRoot}/build/blue/openocd.cfg"
+      ],
+      "preLaunchTask": "debug-deps-blue"
+    },
+    {
+      "name": "blue-207",
+      "cwd": "${workspaceRoot}",
+      "executable": "${workspaceFolder}/build/blue-207/tiny-debug.elf",
+      "request": "launch",
+      "type": "cortex-debug",
+      "servertype": "openocd",
+      "serverpath": "${workspaceFolder}/build/blue-207/openocd/bin/openocd",
+      "runToMain": true,
+      "armToolchainPath": "${workspaceRoot}/build/blue-207",
+      "configFiles": [
+        "${workspaceRoot}/build/blue-207/openocd.cfg"
+      ],
+      "preLaunchTask": "debug-deps-blue-207"
+    },
+    {
+      "name": "blue-atomic",
+      "cwd": "${workspaceRoot}",
+      "executable": "${workspaceFolder}/build/blue-atomic/tiny-debug.elf",
+      "request": "launch",
+      "type": "cortex-debug",
+      "servertype": "openocd",
+      "serverpath": "${workspaceFolder}/build/blue-atomic/openocd/bin/openocd",
+      "runToMain": true,
+      "armToolchainPath": "${workspaceRoot}/build/blue-atomic",
+      "configFiles": [
+        "${workspaceRoot}/build/blue-atomic/openocd.cfg"
+      ],
+      "preLaunchTask": "debug-deps-blue-atomic"
+    },
+    {
+      "name": "Blue Zumo",
+      "cwd": "${workspaceRoot}",
+      "executable": "${workspaceFolder}/build/blue-zumo/tiny-debug.elf",
+      "request": "launch",
+      "type": "cortex-debug",
+      "servertype": "openocd",
+      "serverpath": "${workspaceFolder}/build/blue-zumo/openocd/bin/openocd",
+      "runToMain": true,
+      "armToolchainPath": "${workspaceRoot}/build/blue-zumo",
+      "configFiles": [
+        "${workspaceRoot}/build/blue-zumo/openocd.cfg"
+      ],
+      "preLaunchTask": "debug-deps-blue-zumo"
+    },
+    {
+      "name": "discovery",
+      "cwd": "${workspaceRoot}",
+      "executable": "${workspaceFolder}/build/discovery/tiny-debug.elf",
+      "request": "launch",
+      "type": "cortex-debug",
+      "servertype": "openocd",
+      "serverpath": "${workspaceFolder}/build/discovery/openocd/bin/openocd",
+      "runToMain": true,
+      "armToolchainPath": "${workspaceRoot}/build/discovery",
+      "configFiles": [
+        "${workspaceRoot}/build/discovery/openocd.cfg"
+      ],
+      "preLaunchTask": "debug-deps-discovery"
+    },
+    {
+      "name": "nucleo-32",
+      "cwd": "${workspaceRoot}",
+      "executable": "${workspaceFolder}/build/nucleo-32/tiny-debug.elf",
+      "request": "launch",
+      "type": "cortex-debug",
+      "servertype": "openocd",
+      "serverpath": "${workspaceFolder}/build/nucleo-32/openocd/bin/openocd",
+      "runToMain": true,
+      "armToolchainPath": "${workspaceRoot}/build/nucleo-32",
+      "configFiles": [
+        "${workspaceRoot}/build/nucleo-32/openocd.cfg"
+      ],
+      "preLaunchTask": "debug-deps-nucleo-32"
+    },
+    {
+      "name": "nucleo-64",
+      "cwd": "${workspaceRoot}",
+      "executable": "${workspaceFolder}/build/nucleo-64/tiny-debug.elf",
+      "request": "launch",
+      "type": "cortex-debug",
+      "servertype": "openocd",
+      "serverpath": "${workspaceFolder}/build/nucleo-64/openocd/bin/openocd",
+      "runToMain": true,
+      "armToolchainPath": "${workspaceRoot}/build/nucleo-64",
+      "configFiles": [
+        "${workspaceRoot}/build/nucleo-64/openocd.cfg"
+      ],
+      "preLaunchTask": "debug-deps-nucleo-64"
+    },
+    {
+      "name": "w1209",
+      "cwd": "${workspaceRoot}",
+      "executable": "${workspaceFolder}/build/w1209/tiny-debug.elf",
+      "request": "launch",
+      "type": "cortex-debug",
+      "servertype": "openocd",
+      "serverpath": "${workspaceFolder}/build/w1209/openocd/bin/openocd",
+      "runToMain": true,
+      "armToolchainPath": "${workspaceRoot}/build/w1209",
+      "configFiles": [
+        "${workspaceRoot}/build/w1209/openocd.cfg"
+      ],
+      "preLaunchTask": "debug-deps-w1209"
+    }
+  ]
+}
