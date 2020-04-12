@@ -30,4 +30,7 @@ INC_DIRS := \
   $(TINY)/include \
   src/rtos \
 
+.PHONY: default
+default: size
+
 include $(TOOLS_DIR)/makefile-worker.mk
